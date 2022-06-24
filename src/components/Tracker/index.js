@@ -31,15 +31,6 @@ function Tracker(props) {
   return (
     <>
       <AddWorkoutForm onAdd={handleAdd} />
-
-      <div className="table">
-        <div className="table__header">
-          <div className="header__date">Date (dd.mm.yyyy)</div>
-          <div className="header__distance">Distance, km</div>
-          <div className="header__remove">Actions</div>
-        </div>
-      </div>
-
       <WorkoutsList workouts={sorted} onRemove={handleRemove} />
     </>
   );

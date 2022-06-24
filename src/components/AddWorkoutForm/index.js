@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
+import styles from './index.module.css';
 
 import Workout from '../WorkoutModel/index';
 
@@ -27,9 +28,9 @@ function AddWorkoutForm(props) {
   };
 
   return (
-    <form onSubmit={handleAdd}>
-      <label htmlFor="date">
-        Date (dd.mm.yyyy)
+    <form onSubmit={handleAdd} className={styles.form}>
+      <label htmlFor="date" className={styles.label}>
+        Date
         <input
           id="date"
           name="date"
@@ -38,9 +39,10 @@ function AddWorkoutForm(props) {
           required="required"
           value={form.date}
           onChange={handleChange}
+          className={styles.input}
         />
       </label>
-      <label htmlFor="distance">
+      <label htmlFor="distance" className={styles.label}>
         Distance, km
         <input
           id="distance"
@@ -50,10 +52,13 @@ function AddWorkoutForm(props) {
           required="required"
           value={form.distance}
           onChange={handleChange}
+          className={styles.input}
         />
       </label>
 
-      <button type="submit">Send</button>
+      <button type="submit" className={styles.button}>
+        Send
+      </button>
     </form>
   );
 }

@@ -1,0 +1,31 @@
+.table {
+  width: 700px;
+  border: 1px solid #3191f2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px 0px 5px 10px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+.list {
+  width: 100%;
+  list-style: none;
+  padding: 0px;
+}
+
+.date,
+.distance,
+.remove {
+  width: 30%;
+  text-align: center;
+}

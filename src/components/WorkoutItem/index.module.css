@@ -1,0 +1,35 @@
+.row {
+  width: 100%;
+  border: 1px solid #3191f2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.date,
+.distance,
+.remove {
+  width: 30%;
+  text-align: center;
+}
+
+.button {
+  box-sizing: border-box;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #3191f2;
+  color: #ffffff;
+  background-color: #3191f2;
+  flex: 1 1 auto;
+}
+
+.button:hover {
+  background-color: #0a7df0;
+}
